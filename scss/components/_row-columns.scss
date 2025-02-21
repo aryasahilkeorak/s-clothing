@@ -1,0 +1,91 @@
+@use "sass:math";
+@use '../utilities/mixins' as *;
+/* Define gutter sizes */
+$gutters: (
+  1,
+  2,
+  3,
+  4,
+  5
+);
+$gutter-base: 0.5rem; // Base spacing unit
+
+/* Apply gutters to rows */
+.sc-row {
+  --sc-gutter-x: 1.5rem;
+  --sc-gutter-y: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--sc-gutter-y) * -1);
+  margin-right: calc(var(--sc-gutter-x) * -.5);
+  margin-left: calc(var(--sc-gutter-x) * -.5);
+}
+
+.sc-row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--sc-gutter-x) * .5);
+  padding-left: calc(var(--sc-gutter-x) * .5);
+  margin-top: var(--sc-gutter-y);
+}
+
+.sc-col {
+  flex: 1 0 0%;
+}
+
+/* Generate gutter classes */
+@each $g in $gutters {
+  .sc-g-#{$g} {
+    --sc-gutter-x: #{$g * $gutter-base};
+    --sc-gutter-y: #{$g * $gutter-base};
+  }
+
+  .sc-gx-#{$g} {
+    --sc-gutter-x: #{$g * $gutter-base};
+  }
+
+  .sc-gy-#{$g} {
+    --sc-gutter-y: #{$g * $gutter-base};
+  }
+}
+
+/* Breakpoints */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1800px
+);
+
+/* Column widths */
+$grid-columns: 12;
+
+/* Generate column classes */
+@each $breakpoint, $size in $grid-breakpoints {
+  @media (min-width: $size) {
+    .sc-col-#{$breakpoint} {
+      flex: 1 0 0%;
+    }
+
+    .sc-col-#{$breakpoint}-auto {
+      flex: 0 0 auto;
+      width: auto;
+    }
+
+    @for $i from 1 through $grid-columns {
+      .sc-col-#{$breakpoint}-#{$i} {
+        flex: 0 0 math.percentage(math.div($i, $grid-columns));
+        max-width: math.percentage(math.div($i, $grid-columns));
+      }
+
+      .sc-col-#{$i} {
+        flex: 0 0 math.percentage(math.div($i, $grid-columns));
+        max-width: math.percentage(math.div($i, $grid-columns));
+      }
+    }
+  }
+}

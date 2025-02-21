@@ -1,0 +1,128 @@
+@use '../utilities/variables' as *;
+
+.sc-cart-section {
+    padding-bottom: 60px;
+
+    .sc-section-title {
+        text-align: start;
+        margin-right: unset;
+        margin-left: unset;
+        margin-bottom: 0px;
+    }
+}
+
+.sc-cart-items {
+
+
+    .sc-cart-item {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba($color: $primary-black, $alpha: 0.1);
+        margin-bottom: 20px;
+
+
+        &:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sc-cart-item-img {
+            width: 150px;
+            height: 150px;
+            background-color: $secondary-grey;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sc-cart-item-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 6px 0;
+            width: calc(100% - 170px);
+
+
+            .sc-cart-item-remove {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                font-size: 20px;
+                color: $accent-red;
+                cursor: pointer;
+            }
+
+            .sc-cart-item-title,
+            .sc-cart-item-size,
+            .sc-cart-item-color {
+                margin-bottom: 3px;
+
+                span {
+                    color: $primary-black;
+                }
+            }
+        }
+    }
+
+}
+
+.sc-cart-items,
+.sc-cart-summary {
+    border: 1px solid rgba($color: $primary-black, $alpha: 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sc-cart-summary {
+    .sc-cart-summary-title {
+        font-family: satoshiBold;
+        margin-bottom: 20px;
+    }
+
+    .sc-cart-charges {
+        margin-bottom: 10px;
+
+        &.sc-cart-discount {
+            h6 {
+                color: $accent-red;
+            }
+        }
+    }
+
+    .sc-card-grandtotal {
+        padding-top: 20px;
+        margin: 20px 0;
+        border-top: 1px solid rgba($color: $primary-black, $alpha: 0.1);
+    }
+
+    .sc-cart-coupon {
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .inputer-wrapper {
+            background-color: $secondary-dark-grey;
+            padding: 12px 15px;
+            border-radius: 30px;
+            gap: 6px;
+            width: 100%;
+
+            input {
+                border: 0;
+                background-color: transparent;
+                outline: none;
+                box-shadow: none;
+                padding: 0;
+            }
+
+            input,input::placeholder,i{
+                color: rgba($color: $primary-black, $alpha: 0.4);
+            }
+        }
+
+
+
+    }
+}

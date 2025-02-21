@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - Shop.co</title>
+    <link rel="shortcut icon" href="./assets/images/logo/brand-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body id="google_translate_element">
+    <header class="sc-header">
+        <div class="sc-signOfferBar">
+            <div class="sc-container">
+                <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
+                <button id="closeSOBar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="sc-navbar">
+            <div class="sc-container">
+                <div class="sc-navbar-collapse">
+                    <a href="./index.html" class="sc-brand-logo">
+                        <img src="./assets/images/logo/brand-nav-logo.png" alt="SHOP.CO">
+                    </a>
+
+                    <div class="sc-navbar-nav">
+                        <ul>
+                            <li>
+                                <a href="./category.html" class="sc-navlink sc-dropdown-btn">Shop</a>
+                                <div class="sc-dropdown sc-d-none">
+                                    <a href="#">Electronics</a>
+                                    <a href="#">Clothing</a>
+                                    <a href="#">Home & Garden</a>
+                                    <a href="#">Sports & Outdoors</a>
+                                    <a href="#">Beauty & Health</a>
+                                    <a href="#">Toys & Gifts</a>
+                                    <a href="#">More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./index.html#topSelling" class="sc-navlink">On Sale</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#newArrivals" class="sc-navlink">New Arrivals</a>
+                            </li>
+                            <li>
+                                <a href="#" class="sc-navlink">Brands</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sc-navbar-utilitis">
+                        <div class="sc-nav-search">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input type="text" placeholder="Search for products...">
+                        </div>
+
+                        <div class="sc-userNcart">
+                            <a href="./cart.html">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span class="material-symbols-outlined">
+                                    account_circle
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="sc-product-categories-section">
+        <div class="sc-container">
+            <div class="sc-breadcrumb-wrapper">
+                <ul class="sc-breadcrumb">
+                    <li class="sc-breadcrumb-item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="sc-breadcrumb-item">
+                        <a href="">Categories</a>
+                    </li>
+                    <li class="sc-breadcrumb-item">
+                        <a href="">Casual</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sc-row">
+                <div class="sc-col-md-4 sc-col-lg-3">
+                    <div class="sc-filter-dropdown-wrapper">
+                        <div class="filters-header sc-d-flex sc-justify-content-between">
+                            <h6>Filters</h6>
+                            <img src="./assets/images/icons/filter.svg" alt="" id="filterBtn">
+                        </div>
+                        <div class="filter-body show">
+                            <div class="sc-accordion">
+                                <!-- Brand -->
+                                <div class="sc-accordion-item">
+                                    <div class="sc-accordion-header">
+                                        <h6>Brand</h6>
+                                        <button class="sc-accordion-button" type="button">
+                                            <i class="fa-solid fa-chevron-up"></i>
+                                        </button>
+                                    </div>
+                                    <div class="sc-accordion-collapse collapse show">
+                                        <div class="sc-accordion-body">
+                                            <div class="sc-filter-by-brands">
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox" checked>
+                                                    <span>Nike</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Adidas</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Puma</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Reebok</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>New Balance</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Gender -->
+                                <div class="sc-accordion-item">
+                                    <div class="sc-accordion-header">
+                                        <h6>Gender</h6>
+                                        <button class="sc-accordion-button" type="button">
+                                            <i class="fa-solid fa-chevron-up"></i>
+                                        </button>
+                                    </div>
+                                    <div class="sc-accordion-collapse collapse show">
+                                        <div class="sc-accordion-body">
+                                            <div class="sc-filter-by-brands">
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Men</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Women</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox" checked>
+                                                    <span>Men & Women</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Boys</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Girls</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Boys & Girls</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>Unisex</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Discount -->
+                                <div class="sc-accordion-item">
+                                    <div class="sc-accordion-header">
+                                        <h6>Discount</h6>
+                                        <button class="sc-accordion-button" type="button">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="sc-accordion-collapse collapse show">
+                                        <div class="sc-accordion-body">
+                                            <div class="sc-filter-by-brands">
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>10% or more</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>20% or more</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>30% or more</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>40% or more</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox" checked>
+                                                    <span>50% or more</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>60% or more</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" class="sc-checkbox">
+                                                    <span>70% or more</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sc-col-md-8 sc-col-lg-9">
+                    <div class="sc-product-listing">
+
+                        <div class="sc-product-listing-header sc-d-flex sc-justify-content-between">
+                            <h5>Casual</h5>
+                            <div class="sc-sort-by sc-d-flex">
+                                <p>Showing 1-10 of 100 Products</p>
+                                <div>
+                                    <label for="sort-by">Sort By:</label>
+                                    <select id="sort-by" name="sort-by">
+                                        <option value="price-low-to-high">Price: Low to High</option>
+                                        <option value="price-high-to-low">Price: High to Low</option>
+                                        <option value="popularity">Popularity</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sc-row sc-gy-3">
+                            <div class="sc-col-lg-4 sc-col-md-6">
+                                <a href="#" class="sc-product-card">
+                                    <div class="sc-product-img">
+                                        <img src="./assets/images/products/uml-p2.png" alt="Product 1">
+                                    </div>
+                                    <div class="sc-product-details">
+                                        <h6 class="product-title">Gradient Graphic T-shirt</h6>
+                                        <div class="product-rating">
+                                            <div class="rating-stars">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                            </div>
+                                            <div class="rating-number">
+                                                5/<span>5</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price">
+                                            <h5>$212</h5>
+                                            <del>$242</del>
+                                            <div class="discount">
+                                                <span>-20%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="sc-col-lg-4 sc-col-md-6">
+                                <a href="#" class="sc-product-card">
+                                    <div class="sc-product-img">
+                                        <img src="./assets/images/products/uml-p3.png" alt="Product 2">
+                                    </div>
+                                    <div class="sc-product-details">
+                                        <h6 class="product-title">Polo with Tipping Details</h6>
+                                        <div class="product-rating">
+                                            <div class="rating-stars">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                            </div>
+                                            <div class="rating-number">
+                                                5/<span>5</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price">
+                                            <h5>$212</h5>
+                                            <del>$242</del>
+                                            <div class="discount">
+                                                <span>-20%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="sc-col-lg-4 sc-col-md-6">
+                                <a href="#" class="sc-product-card">
+                                    <div class="sc-product-img">
+                                        <img src="./assets/images/products/uml-p4.png" alt="Product 1">
+                                    </div>
+                                    <div class="sc-product-details">
+                                        <h6 class="product-title">Black Striped T-shirt</h6>
+                                        <div class="product-rating">
+                                            <div class="rating-stars">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                            </div>
+                                            <div class="rating-number">
+                                                5/<span>5</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price">
+                                            <h5>$212</h5>
+                                            <del>$242</del>
+                                            <div class="discount">
+                                                <span>-20%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="sc-col-lg-4 sc-col-md-6">
+                                <a href="#" class="sc-product-card">
+                                    <div class="sc-product-img">
+                                        <img src="./assets/images/products/na-p2.png" alt="Product 1">
+                                    </div>
+                                    <div class="sc-product-details">
+                                        <h6 class="product-title">Skinny Fit Jeans</h6>
+                                        <div class="product-rating">
+                                            <div class="rating-stars">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                            </div>
+                                            <div class="rating-number">
+                                                5/<span>5</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price">
+                                            <h5>$212</h5>
+                                            <del>$242</del>
+                                            <div class="discount">
+                                                <span>-20%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="sc-col-lg-4 sc-col-md-6">
+                                <a href="#" class="sc-product-card">
+                                    <div class="sc-product-img">
+                                        <img src="./assets/images/products/na-p3.png" alt="Product 1">
+                                    </div>
+                                    <div class="sc-product-details">
+                                        <h6 class="product-title">Checkered Shirt</h6>
+                                        <div class="product-rating">
+                                            <div class="rating-stars">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                            </div>
+                                            <div class="rating-number">
+                                                5/<span>5</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price">
+                                            <h5>$212</h5>
+                                            <del>$242</del>
+                                            <div class="discount">
+                                                <span>-20%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sc-col-lg-4 sc-col-md-6">
+                                <a href="#" class="sc-product-card">
+                                    <div class="sc-product-img">
+                                        <img src="./assets/images/products/uml-p1.png" alt="Product 1">
+                                    </div>
+                                    <div class="sc-product-details">
+                                        <h6 class="product-title">Polo with Contrast Trims</h6>
+                                        <div class="product-rating">
+                                            <div class="rating-stars">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                                <img src="./assets/images/icons/star-full.svg" alt="star-full">
+                                            </div>
+                                            <div class="rating-number">
+                                                5/<span>5</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-price">
+                                            <h5>$212</h5>
+                                            <del>$242</del>
+                                            <div class="discount">
+                                                <span>-20%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="sc-pagination">
+                            <a href="#" class="prev-page sc-btn sc-btn-primary-outline"><i
+                                    class="fa-solid fa-arrow-left-long"></i> Previous</a>
+                            <div class="pagination-numbers">
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">...</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                            </div>
+                            <a href="#" class="next-page sc-btn sc-btn-primary-outline">Next <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="sc-subscribe-newsletter">
+        <div class="sc-container">
+            <div class="sc-subscribe-newsletter-wrapper">
+                <div class="sc-row sc-justify-content-between">
+                    <div class="sc-col-lg-6">
+                        <h3 class="sc-section-title">STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h3>
+                    </div>
+                    <div class="sc-col-lg-4 sc-col-xl-3 sc-text-end">
+                        <form action="#">
+                            <div class="email-input-wrapper">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="text" placeholder="Enter your email address">
+                            </div>
+                            <button type="submit" class="sc-btn newsletter-form-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="sc-footer">
+        <div class="sc-container">
+            <div class="sc-row">
+                <div class="sc-col-xl-4">
+                    <a href="" class="sc-brand-logo-footer sc-section-title">SHOP.CO</a>
+                    <p>We have clothes that suits your style and <br> which you’re proud to wear. From <br> women to
+                        men.</p>
+                    <div class="sc-social-handles">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                </div>
+                <div class="sc-col-xl-8">
+                    <div class="sc-row sc-justify-content-between">
+                        <div class="sc-col-xl-2">
+                            <p class="footer-titles">Company</p>
+                            <ul class="footer-links">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="sc-col-xl-2">
+                            <p class="footer-titles">Help</p>
+                            <ul class="footer-links">
+                                <li><a href="#">Customer Support</a></li>
+                                <li><a href="#">Delivery Details</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="sc-col-xl-2">
+                            <p class="footer-titles">FAQ's</p>
+                            <ul class="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Manage Deliveries</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Payments</a></li>
+                            </ul>
+                        </div>
+                        <div class="sc-col-xl-2">
+                            <p class="footer-titles">links</p>
+                            <ul class="footer-links">
+                                <li><a href="#">Raw Materials</a></li>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Production</a></li>
+                                <li><a href="#">Branding</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="sc-row">
+                    <div class="sc-col-md-6">
+                        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+                    </div>
+                    <div class="sc-col-md-6">
+                        <div class="payment-methods">
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo/Visa.svg" alt="Visa">
+                            </div>
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo/Mastercard.svg" alt="Mastercard">
+                            </div>
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo/Paypal.svg" alt="Paypal">
+                            </div>
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo//apple-pay.svg" alt="apple-pay">
+                            </div>
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo/g-pay.svg" alt="g-pay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/header.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordionHeaders = document.querySelectorAll(".sc-accordion-header");
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener("click", function () {
+                    const accordionItem = this.parentElement;
+                    const accordionContent = accordionItem.querySelector(".sc-accordion-collapse");
+                    const icon = this.querySelector("i");
+
+                    // Toggle collapse class
+                    accordionContent.classList.toggle("show");
+
+                    // Toggle icon rotation
+                    if (icon.classList.contains("fa-chevron-down")) {
+                        icon.classList.remove("fa-chevron-down");
+                        icon.classList.add("fa-chevron-up");
+                    } else {
+                        icon.classList.remove("fa-chevron-up");
+                        icon.classList.add("fa-chevron-down");
+                    }
+
+                    if (accordionContent.classList.contains("show")) {
+                        icon.classList.add("fa-chevron-up");
+                    } else {
+                        icon.classList.add("fa-chevron-down");
+                    }
+
+                });
+            });
+
+            const filterBtn = document.getElementById("filterBtn");
+            const filterBody = document.querySelector(".filter-body");
+
+            filterBtn.addEventListener("click", function () {
+                filterBody.classList.toggle("show");
+            });
+        });
+
+
+
+
+    </script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

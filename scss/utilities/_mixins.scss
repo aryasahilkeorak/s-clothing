@@ -1,0 +1,58 @@
+// Mixin for responsive typography
+@mixin responsive-font($size-xl, $size-lg, $size-md, $size-sm, $size-xs) {
+    font-size: $size-xl;
+
+    @media (max-width: 1280px) {
+        font-size: $size-lg;
+    }
+
+    @media (max-width: 768px) {
+        font-size: $size-md;
+    }
+
+    @media (max-width: 480px) {
+        font-size: $size-sm;
+    }
+
+    @media (max-width: 360px) {
+        font-size: $size-xs;
+    }
+}
+
+@mixin media($type, $breakpoint) {
+    @if $breakpoint =="sm" {
+        @media (#{$type}-width: 600px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =="md" {
+        @media (#{$type}-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =="lg" {
+        @media (#{$type}-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =="xl" {
+        @media (#{$type}-width: 1280px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =="xxl" {
+        @media (#{$type}-width: 1600px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =="xxxl" {
+        @media (#{$type}-width: 1800px) {
+            @content;
+        }
+    }
+}

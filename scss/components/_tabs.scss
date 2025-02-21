@@ -1,0 +1,54 @@
+@use '../utilities/variables' as *;
+
+.sc-tabs {
+    width: 100%;
+
+    .sc-nav-tabs {
+        display: flex;
+
+        .sc-nav-item {
+            flex: 1 1 auto;
+            text-align: center;
+            border-bottom: 1px solid rgba($color: $primary-black, $alpha: .1);
+
+            transition: ease all .1s;
+
+            &:has(.active) {
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $primary-black;
+                }
+            }
+
+            .sc-navlink {
+                display: inline-block;
+                width: 100%;
+                padding: 15px;
+            }
+
+        }
+    }
+
+    .sc-tab-content {
+        padding: 20px 0;
+
+        .sc-tab-pane {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            &.fade {
+                transition: opacity .15s linear;
+            }
+        }
+    }
+}

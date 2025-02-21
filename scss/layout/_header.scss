@@ -1,0 +1,152 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+.sc-header {
+    background-color: $primary-white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid $secondary-grey;
+
+    +section {
+        margin-top: 106px;
+        min-height: calc(100vh - 106px);
+    }
+
+    &.sc-navbar-only {
+        height: 68px;
+
+        +section {
+            margin-top: 68px;
+        }
+    }
+
+    // Offers Bar Header
+    .sc-signOfferBar {
+        background-color: $primary-black;
+        color: $primary-white;
+        padding: 8px 0px;
+        text-align: center;
+
+        p {
+            color: $primary-white;
+            font-family: satoshiLight;
+
+            a {
+                font-family: satoshi;
+                color: $primary-white;
+                text-decoration: underline;
+            }
+        }
+
+        .sc-container {
+            position: relative;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: $primary-white;
+            padding: 0;
+            position: absolute;
+            right: 15px;
+            top: 0;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+
+    .sc-navbar {
+        padding: 15px 0;
+
+        .sc-navbar-collapse,
+        .sc-navbar-nav ul,
+        .sc-navbar-utilitis,
+        .sc-userNcart {
+            display: flex;
+            align-items: center;
+        }
+
+        .sc-navbar-collapse {
+            justify-content: space-between;
+        }
+
+        .sc-navbar-nav {
+            margin: 0 auto;
+
+            ul {
+                gap: 50px;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        color: $primary-black;
+                    }
+                }
+            }
+        }
+
+        .sc-navbar-utilitis {
+            width: 40%;
+            justify-content: space-between;
+
+            .sc-nav-search {
+                background-color: $secondary-dark-grey;
+                border-radius: 30px;
+                padding: 8px 18px;
+                width: calc(100% - 90px);
+
+                input,
+                button {
+                    border: none;
+                    background-color: transparent;
+                    font-size: 16px;
+                    outline: none;
+                    padding: 0;
+                }
+
+                input,
+                input::placeholder,
+                button {
+                    color: rgba($color: $primary-black, $alpha: .4);
+                }
+
+                button {
+                    margin-right: 6px;
+                }
+            }
+
+            .sc-userNcart {
+                gap: 15px;
+
+                a {
+                    color: $primary-black;
+                }
+            }
+        }
+    }
+
+    @include media(max, "xl") {
+        +section {
+            margin-top: 93px;
+            min-height: calc(100dvh - 93px);
+        }
+
+        .sc-navbar {
+            padding: 10px 0;
+            .sc-navbar-nav {
+                ul {
+                    gap: 30px;
+                }
+            }
+        }
+
+        .sc-navbar-utilitis {
+            width: 350px;
+        }
+
+    }
+}

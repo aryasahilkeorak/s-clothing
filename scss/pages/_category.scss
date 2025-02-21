@@ -1,0 +1,63 @@
+@use '../utilities/variables' as *;
+
+.sc-product-categories-section {
+    padding-bottom: 60px;
+
+    .sc-product-listing-header {
+        margin-bottom: 10px;
+
+        .sc-sort-by {
+            p {
+                margin-right: 15px;
+            }
+
+            p,
+            label {
+                color: $black-fade;
+            }
+            select{
+                font-family: satoshiBold;
+                width: auto;
+            }
+            select,
+            select:focus {
+                border: 0;
+                padding: 0;
+                outline: none;
+            }
+        }
+    }
+
+    .sc-accordion {
+        .sc-accordion-item {
+            .sc-accordion-body {
+                &>div {
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid rgba($color: $primary-black, $alpha: .1);
+                    padding: 0 0 20px 6px;
+                }
+
+                .sc-filter-by-brands {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                .sc-accordion-body {
+                    &>div {
+                        padding-bottom: 0;
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}

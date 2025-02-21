@@ -1,0 +1,34 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.sc-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+
+    @include media("min", "xs") {
+        max-width: 540px;
+    }
+
+    @include media("min", "md") {
+        max-width: 720px;
+    }
+
+    @include media("min", "lg") {
+        max-width: 960px;
+    }
+
+    @include media("min", "xl") {
+        max-width: 1200px;
+    }
+
+    @include media("min", "xxl") {
+        max-width: 1320px;
+    }
+
+    @include media("min", "xxxl") {
+        max-width: 1580px;
+    }
+}

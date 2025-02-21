@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Shop.co</title>
+    <link rel="shortcut icon" href="./assets/images/logo/brand-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body id="google_translate_element">
+    <header class="sc-header">
+        <div class="sc-signOfferBar">
+            <div class="sc-container">
+                <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
+                <button id="closeSOBar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="sc-navbar">
+            <div class="sc-container">
+                <div class="sc-navbar-collapse">
+                    <a href="./index.html" class="sc-brand-logo">
+                        <img src="./assets/images/logo/brand-nav-logo.png" alt="SHOP.CO">
+                    </a>
+
+                    <div class="sc-navbar-nav">
+                        <ul>
+                            <li>
+                                <a href="./category.html" class="sc-navlink sc-dropdown-btn">Shop</a>
+                                <div class="sc-dropdown sc-d-none">
+                                    <a href="#">Electronics</a>
+                                    <a href="#">Clothing</a>
+                                    <a href="#">Home & Garden</a>
+                                    <a href="#">Sports & Outdoors</a>
+                                    <a href="#">Beauty & Health</a>
+                                    <a href="#">Toys & Gifts</a>
+                                    <a href="#">More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./index.html#topSelling" class="sc-navlink">On Sale</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#newArrivals" class="sc-navlink">New Arrivals</a>
+                            </li>
+                            <li>
+                                <a href="#" class="sc-navlink">Brands</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sc-navbar-utilitis">
+                        <div class="sc-nav-search">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <input type="text" placeholder="Search for products...">
+                        </div>
+
+                        <div class="sc-userNcart">
+                            <a href="./cart.html">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span class="material-symbols-outlined">
+                                    account_circle
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="sc-cart-section">
+        <div class="sc-container">
+            <div class="sc-breadcrumb-wrapper">
+                <ul class="sc-breadcrumb">
+                    <li class="sc-breadcrumb-item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="sc-breadcrumb-item">
+                        <a href="">Cart</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sc-row sc-gy-3">
+                <div class="sc-col-12">
+                    <h2 class="sc-section-title">YOUR CART</h2>
+                </div>
+                <div class="sc-col-lg-7">
+                    <div class="sc-cart-items">
+                        <div class="sc-cart-item sc-product-item">
+                            <div class="sc-cart-item-img">
+                                <img src="./assets/images/products/na-p1.png" alt="product-1">
+                            </div>
+
+                            <div class="sc-cart-item-details">
+                                <div class="sc-d-flex sc-justify-content-between sc-align-items-start">
+                                    <div>
+                                        <h6 class="sc-cart-item-title">Black Plain T-shirt</h6>
+                                        <p class="sc-cart-item-size"><span>Size:</span> Large</p>
+                                        <p class="sc-cart-item-color"><span>Color:</span> Black</p>
+                                    </div>
+                                    <button type="button" class="sc-cart-item-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                                <div class="sc-d-flex sc-justify-content-between sc-align-items-end">
+                                    <h5>$145</h5>
+
+                                    <div class="quantity sc-d-flex sc-align-items-center">
+                                        <button class="removeItem"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="number" class="product-quantity" value="0">
+                                        <button class="addItem"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sc-cart-item sc-product-item">
+                            <div class="sc-cart-item-img">
+                                <img src="./assets/images/products/na-p2.png" alt="product-1">
+                            </div>
+
+                            <div class="sc-cart-item-details">
+                                <div class="sc-d-flex sc-justify-content-between sc-align-items-start">
+                                    <div>
+                                        <h6 class="sc-cart-item-title">Skinny Fit Jeans</h6>
+                                        <p class="sc-cart-item-size"><span>Size:</span> Large</p>
+                                        <p class="sc-cart-item-color"><span>Color:</span> Blue</p>
+                                    </div>
+                                    <button type="button" class="sc-cart-item-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                                <div class="sc-d-flex sc-justify-content-between sc-align-items-end">
+                                    <h5>$145</h5>
+
+                                    <div class="quantity sc-d-flex sc-align-items-center">
+                                        <button class="removeItem"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="number" class="product-quantity" value="0">
+                                        <button class="addItem"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sc-cart-item sc-product-item">
+                            <div class="sc-cart-item-img">
+                                <img src="./assets/images/products/na-p3.png" alt="product-1">
+                            </div>
+
+                            <div class="sc-cart-item-details">
+                                <div class="sc-d-flex sc-justify-content-between sc-align-items-start">
+                                    <div>
+                                        <h6 class="sc-cart-item-title">Checkered Shirt</h6>
+                                        <p class="sc-cart-item-size"><span>Size:</span> Medium</p>
+                                        <p class="sc-cart-item-color"><span>Color:</span> Red</p>
+                                    </div>
+                                    <button type="button" class="sc-cart-item-remove">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                </div>
+
+                                <div class="sc-d-flex sc-justify-content-between sc-align-items-end">
+                                    <h5>$180</h5>
+
+                                    <div class="quantity sc-d-flex sc-align-items-center">
+                                        <button class="removeItem"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="number" class="product-quantity" value="0">
+                                        <button class="addItem"><i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-col-lg-5">
+                    <div class="sc-cart-summary">
+                        <h5 class="sc-cart-summary-title">Order Summary</h5>
+                        <div class="sc-cart-charges sc-d-flex sc-justify-content-between sc-align-items-end">
+                            <p>Subtotal:</p>
+                            <h6>$565</h6>
+                        </div>
+                        <div class="sc-cart-charges sc-cart-discount sc-d-flex sc-justify-content-between sc-align-items-end">
+                            <p>Discount <span>(-20%)</span>:</p>
+                            <h6>-$113</h6>
+                        </div>
+                        <div class="sc-cart-charges sc-cart-fees sc-d-flex sc-justify-content-between sc-align-items-end">
+                            <p>Delivery Fee:</p>
+                            <h6>$5</h6>
+                        </div>
+                        <div class="sc-card-grandtotal sc-d-flex sc-justify-content-between sc-align-items-end">
+                            <p class="sc-card-grandtotal-title">Total:</p>
+                            <h6>$457</h6>
+                        </div>
+                        <div class="sc-cart-coupon sc-d-flex sc-justify-content-between sc-align-items-center">
+                            <div class="inputer-wrapper sc-d-flex sc-align-items-center">
+                                <i class="fa-solid fa-tag"></i>
+                                <input type="text" placeholder="Enter your coupon code">
+                            </div>
+                            <button type="button" class="sc-btn sc-btn-sm sc-btn-primary">Apply</button>
+                        </div>
+                        <div>
+                            <button type="button" class="sc-btn sc-btn-primary sc-btn-primary sc-w-100 sc-text-center">Place Order <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="sc-subscribe-newsletter">
+        <div class="sc-container">
+            <div class="sc-subscribe-newsletter-wrapper">
+                <div class="sc-row sc-justify-content-between">
+                    <div class="sc-col-lg-6">
+                        <h3 class="sc-section-title">STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h3>
+                    </div>
+                    <div class="sc-col-lg-4 sc-col-xl-3 sc-text-end">
+                        <form action="#">
+                            <div class="email-input-wrapper">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="text" placeholder="Enter your email address">
+                            </div>
+                            <button type="submit" class="sc-btn newsletter-form-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="sc-footer">
+        <div class="sc-container">
+            <div class="sc-row">
+                <div class="sc-col-xl-4">
+                    <a href="" class="sc-brand-logo-footer sc-section-title">SHOP.CO</a>
+                    <p>We have clothes that suits your style and <br> which you’re proud to wear. From <br> women to
+                        men.</p>
+                    <div class="sc-social-handles">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                </div>
+                <div class="sc-col-xl-8">
+                    <div class="sc-row sc-justify-content-between">
+                        <div class="sc-col-xl-2">
+                            <p class="footer-titles">Company</p>
+                            <ul class="footer-links">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="sc-col-xl-2">
+                            <p class="footer-titles">Help</p>
+                            <ul class="footer-links">
+                                <li><a href="#">Customer Support</a></li>
+                                <li><a href="#">Delivery Details</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="sc-col-xl-2">
+                            <p class="footer-titles">FAQ's</p>
+                            <ul class="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Manage Deliveries</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Payments</a></li>
+                            </ul>
+                        </div>
+                        <div class="sc-col-xl-2">
+                            <p class="footer-titles">links</p>
+                            <ul class="footer-links">
+                                <li><a href="#">Raw Materials</a></li>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Production</a></li>
+                                <li><a href="#">Branding</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="sc-row">
+                    <div class="sc-col-md-6">
+                        <p>Shop.co © 2000-2023, All Rights Reserved</p>
+                    </div>
+                    <div class="sc-col-md-6">
+                        <div class="payment-methods">
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo/Visa.svg" alt="Visa">
+                            </div>
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo/Mastercard.svg" alt="Mastercard">
+                            </div>
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo/Paypal.svg" alt="Paypal">
+                            </div>
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo//apple-pay.svg" alt="apple-pay">
+                            </div>
+                            <div class="pm-img-wrapper">
+                                <img src="./assets/images/logo/g-pay.svg" alt="g-pay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/product-detail.js"></script>
+</body>
+
+</html>

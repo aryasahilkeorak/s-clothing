@@ -1,0 +1,40 @@
+@use '../utilities/variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: $ff-primary;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $secondary-grey;
+    border-left: 1px solid $secondary-dark-grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba($color: $primary-black, $alpha: 0.6);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-black;
+}
+
+li {
+    list-style-type: none;
+}

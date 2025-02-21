@@ -1,0 +1,84 @@
+@use '../utilities/variables' as *;
+
+.sc-product-faqs {
+    .sc-faq-wrapper {
+        border-bottom: 1px solid rgba($color: $primary-black, $alpha: .1);
+        padding: 10px 0;
+        margin-bottom: 6px;
+
+        h6,
+        p {
+            b {
+                color: $primary-black;
+                font-size: 18px;
+                width: 27px;
+                display: inline-block;
+                position: relative;
+
+                &::after {
+                    content: ':';
+                    width: 100%;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 2px;
+                }
+            }
+        }
+
+        h6 {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .faq-thumbs-report {
+            justify-content: end;
+            padding-right: 15px;
+            gap: 20px;
+            font-size: 18px;
+            color: $black-fade;
+
+            i {
+                cursor: pointer;
+                transition: ease all 0.3s;
+            }
+
+            .report-faq {
+                position: relative;
+
+                .report-abuse-popup {
+
+                    position: absolute;
+                    background-color: $primary-white;
+                    font-size: 14px;
+                    white-space: nowrap;
+                    padding: 6px 10px;
+                    box-shadow: 0 0 3px $black-fade;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: opacity .03s ease-in-out, visibility .03s ease-in-out;
+
+                    a {
+                        color: $accent-red;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &.show {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        &:last-of-type{
+            margin-bottom: 20px;
+        }
+    }
+}

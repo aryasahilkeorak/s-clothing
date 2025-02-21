@@ -1,0 +1,113 @@
+@use '../utilities/variables' as *;
+
+.sc-section-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: intergralCfbold;
+}
+
+.sc-devider {
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 85%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        margin: 0 auto;
+        background-color: $black-fade;
+    }
+}
+
+.sc-checkbox {
+    height: 18px;
+    width: 18px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: $primary-white;
+        border-radius: 4px;
+        top: -1.5px;
+        left: -1.5px;
+        border: 1px solid $primary-black;
+    }
+
+    &:checked {
+        &::after {
+            background-image: url(../../assets/images/icons/check-tick.svg);
+            background-size: 12px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: $primary-black;
+        }
+    }
+}
+
+.sc-sections-padding-y {
+    padding: 90px 0;
+}
+
+.sc-text-center {
+    text-align: center;
+}
+
+.sc-text-end {
+    text-align: end;
+}
+
+.sc-pt-xl {
+    padding-top: 40px;
+}
+
+.sc-d-none {
+    display: none;
+}
+
+.sc-d-flex {
+    display: flex;
+}
+
+.sc-gap-2 {
+    gap: 1rem;
+}
+
+.sc-justify-content-start {
+    justify-content: start;
+}
+
+.sc-justify-content-center {
+    justify-content: center;
+}
+
+.sc-justify-content-end {
+    justify-content: end;
+}
+
+.sc-justify-content-between {
+    justify-content: space-between;
+}
+
+.sc-align-items-center {
+    align-items: center;
+}
+
+.sc-align-items-start {
+    align-items: start;
+}
+
+.sc-align-items-end {
+    align-items: end;
+}
+
+.sc-w-100{
+    width: 100%;
+}

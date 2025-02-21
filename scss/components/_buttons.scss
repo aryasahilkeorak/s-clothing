@@ -1,0 +1,34 @@
+@use '../utilities/variables' as *;
+
+.sc-btn {
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-family: satoshiMedium;
+    transition: ease all .4s;
+    display: inline-block;
+}
+
+.sc-btn-primary {
+    box-shadow: inset 0px 50px $primary-black;
+    color: $primary-white;
+    border: 1px solid $primary-black;
+
+    &:hover {
+        box-shadow: inset 0px 0px $primary-black;
+        color: $primary-black;
+        border: 1px solid $black-fade;
+        background-color: $primary-white;
+    }
+}
+
+.sc-btn-primary-outline {
+    box-shadow: inset 0px 0px $primary-black;
+    color: $primary-black;
+    border: 1px solid $black-fade;
+
+    &:hover {
+        box-shadow: inset 0px -50px $primary-black;
+        color: $primary-white;
+        border: 1px solid $primary-black;
+    }
+}

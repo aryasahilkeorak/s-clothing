@@ -1,0 +1,26 @@
+// Primary Colors
+$primary-black: #000000; // Black - Used for bold headings and footer text
+$primary-white: #ffffff; // White - Background and text contrast
+$black-fade: rgba($color: $primary-black, $alpha: .5);
+
+// Secondary Colors
+$secondary-grey: #F0EEED; // Light grey - Background for cards and sections
+$secondary-dark-grey: #F0F0F0; // Dark grey - Footer background
+$secondary-yellow: #fbbc04; // Yellow - Star ratings
+
+// Accent Colors
+$accent-red: #FF3333; // Red - Discounted prices
+$accent-green: #34a853; // Green - Verified badge or positive elements
+$accent-blue: #4285f4; // Blue - Links and actions
+
+// Neutral Colors
+$neutral-grey-light: #d9d9d9; // Light grey - Borders and subtle dividers
+$neutral-grey-dark: #757575; // Dark grey - Secondary text
+
+// Typography Font Family
+$text-primary: $primary-black; // Primary text
+$text-secondary: $neutral-grey-dark; // Secondary text
+
+// font family
+$ff-primary: satoshi;
+$ff-secondary: intergralCf;

@@ -1,0 +1,40 @@
+@use '../utilities/variables' as *;
+
+.sc-accordion {
+    transition: all 0.4s ease;
+
+    .sc-accordion-item {
+        margin-bottom: 6px;
+        .sc-accordion-header {
+            display: flex;
+            padding: 0px;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                background-color: transparent;
+                border: 0;
+                outline: none;
+                padding: 0;
+                cursor: pointer;
+            }
+        }
+
+        .sc-accordion-collapse {
+            overflow: hidden;
+            height: 0;
+            opacity: 0;
+            transition: all 0.4s ease;
+
+            &.show {
+                height: auto;
+                opacity: 1;
+            }
+        }
+
+        .sc-accordion-body {
+            padding: 10px 0px;
+            
+        }
+    }
+}

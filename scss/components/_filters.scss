@@ -1,0 +1,33 @@
+@use '../utilities/variables' as *;
+
+.sc-filter-dropdown-wrapper {
+    border: 1px solid rgba($color: $primary-black, $alpha: .1);
+    border-radius: 20px;
+    padding: 15px 20px;
+
+    .filters-header {
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .filter-body {
+        opacity: 0;
+        height: 0;
+        transition: all 0.1s ease;
+        border-top: 1px solid rgba($color: $primary-black, $alpha: .1);
+        // max-height: calc(100dvh - 280px);
+        // overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        &.show {
+            opacity: 1;
+            height: auto;
+            padding-top: 15px;
+            margin-top: 20px;
+        }
+    }
+}

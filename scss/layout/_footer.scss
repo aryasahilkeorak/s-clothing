@@ -1,0 +1,148 @@
+@use '../utilities/variables' as *;
+.sc-subscribe-newsletter {
+    background-color: transparent;
+    margin-bottom: -90px;
+    position: relative;
+    z-index: 1;
+
+    .sc-subscribe-newsletter-wrapper {
+        background-color: $primary-black;
+        border-radius: 20px;
+        padding: 30px 60px;
+
+        .sc-section-title {
+            color: $primary-white;
+            text-align: start;
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+
+        .email-input-wrapper,
+        .newsletter-form-btn {
+            background-color: $primary-white;
+            border-radius: 30px;
+        }
+
+        .email-input-wrapper {
+            padding: 14px 20px;
+            display: flex;
+            color: rgba($color: $primary-black, $alpha: 0.4);
+            gap: 7px;
+            margin-bottom: 8px;
+
+            input {
+                border: 0;
+                background-color: transparent;
+                outline: none;
+            }
+
+            input,
+            input::placeholder {
+                font-size: 16px;
+                color: rgba($color: $primary-black, $alpha: 0.6);
+            }
+
+            i {
+                font-size: 18px;
+            }
+
+        }
+
+        .newsletter-form-btn {
+            width: 100%;
+            border: 0;
+            font-size: 16px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+.sc-footer {
+    background-color: $secondary-dark-grey;
+    padding: 120px 0 60px 0;
+
+    .sc-brand-logo-footer {
+        font-size: 34px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    .sc-social-handles {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+
+        a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba($color: $primary-black, $alpha: 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $primary-black;
+            background-color: $primary-white;
+            transition: ease all .8s;
+            font-size: 16px;
+
+            &:hover {
+                background-color: $primary-black;
+                color: $primary-white;
+                border: 1px solid $primary-black;
+            }
+        }
+    }
+
+    .footer-titles {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $primary-black;
+        letter-spacing: 3px;
+        font-family: satoshiBold;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        li {
+            a {
+                text-transform: capitalize;
+                color: $black-fade;
+                transition: ease all .3s text-decoration;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-top: 20px;
+        margin-top: 40px;
+        border-top: 1px solid rgba($color: $primary-black, $alpha: 0.1);
+        .payment-methods {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: end;
+
+            .pm-img-wrapper {
+                background-color: $primary-white;
+                padding: 5px 10px;
+                width: 50px;
+                text-align: center;
+                border-radius: 5px;
+            }
+
+        }
+    }
+
+}

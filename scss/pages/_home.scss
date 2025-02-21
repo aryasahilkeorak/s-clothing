@@ -1,0 +1,148 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.sc-hero-banner {
+    background-color: $secondary-grey;
+    padding-top: 80px;
+    display: flex;
+    align-items: end;
+
+    .sc-hero-text-content {
+        h1 {
+            font-family: satoshiBold;
+            margin-bottom: 6px;
+            line-height: 1.2;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        a {
+            width: 200px;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    .sc-brand-features {
+        padding: 30px 0 60px 0;
+
+        .feature-wrapper {
+            padding: 10px 40px;
+
+            &:first-of-type {
+                padding-left: 0;
+            }
+
+            &:nth-last-of-type(even) {
+                border-left: 1px solid rgba($color: $primary-black, $alpha: .1);
+                border-right: 1px solid rgba($color: $primary-black, $alpha: .1);
+            }
+
+            h3 {
+                font-family: satoshiBold;
+            }
+        }
+    }
+
+    .sc-hero-main-img {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        min-height: 100%;
+    }
+
+    @include media(max, "xl") {
+        padding-top: 40px;
+
+        .sc-brand-features {
+            padding: 30px 0 60px 0;
+
+            .feature-wrapper {
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+
+.sc-brands-section {
+    background-color: $primary-black;
+    padding: 40px 0;
+
+    .sc-brands-row {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        .sc-brand-image {
+            width: calc(100% / 5);
+            text-align: center;
+
+            &:first-of-type {
+                text-align: start;
+            }
+
+            &:last-of-type {
+                text-align: end;
+            }
+        }
+    }
+}
+
+.sc-dress-styles {
+    .sc-dress-styles-wrapper {
+        background-color: $secondary-dark-grey;
+        padding: 60px 45px 45px 45px;
+        border-radius: 40px;
+
+        .sc-section-title {
+            margin-bottom: 50px;
+        }
+
+        .dress-styles {
+            .style-box {
+                background-color: $primary-white;
+                border-radius: 20px;
+                display: flex;
+                padding: 0px 0px 0px 30px;
+                width: 100%;
+                justify-content: end;
+                position: relative;
+                min-height: 100%;
+                overflow: hidden;
+
+                img {
+                    margin-bottom: 0;
+                    min-height: 100%;
+                    object-fit: cover;
+                    transition: ease all .5s;
+                }
+
+                .style-title {
+                    position: absolute;
+                    top: 10px;
+                    left: 20px;
+                    transition: ease all .5s;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.05);
+                    }
+
+                    .style-title {
+                        color: $black-fade;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sc-customers-testimonials {
+    .sc-section-title {
+        text-align: start;
+    }
+}

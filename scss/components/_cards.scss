@@ -1,0 +1,133 @@
+@use '../utilities/variables' as *;
+
+.sc-product-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    min-height: 100%;
+
+    .sc-product-img {
+        background-color: $secondary-grey;
+        border-radius: 20px;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding: 20px 15px;
+        overflow: hidden;
+        height: calc(100% - 120px);
+        flex: 1;
+
+        img {
+            transition: ease all .5s;
+        }
+    }
+
+    .sc-product-details {
+        // max-height: 120px;
+
+        .product-title {
+            font-family: satoshiBold;
+            color: $text-primary;
+            text-transform: capitalize;
+        }
+
+        .product-title,
+        .product-rating {
+            margin-bottom: 8px;
+
+        }
+
+        .product-rating,
+        .rating-stars {
+            display: flex;
+            align-items: center;
+        }
+
+        .rating-stars {
+            gap: 5px;
+            margin-right: 15px;
+        }
+
+        .rating-number {
+            margin-right: -15px;
+
+            span {
+                color: $black-fade;
+            }
+        }
+
+        .product-price {
+            font-family: satoshiBold;
+            color: $text-primary;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            del {
+                font-size: 24px;
+                color: $black-fade;
+            }
+
+            .discount {
+                background-color: rgba($color: $accent-red, $alpha: .1);
+                color: $accent-red;
+                padding: 6px 15px;
+                border-radius: 30px;
+                font-size: 12px;
+                font-family: satoshiMedium;
+
+            }
+        }
+    }
+
+    &:hover {
+        .product-title {
+            text-decoration: underline;
+        }
+
+        .sc-product-img {
+            img {
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+.sc-testimonial-card {
+    border: 1px solid rgba($color: $primary-black, $alpha: .1);
+    padding: 25px;
+    border-radius: 20px;
+    min-height: 100%;
+
+    .sc-testimonail-rating,
+    .customer-info {
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+
+    .customer-info {
+        .customer-name {
+            font-family: satoshiBold;
+            color: $text-primary;
+            margin-bottom: 0px;
+            margin-right: 6px;
+        }
+    }
+
+    .sc-testimonial-text {
+        line-height: 1.5;
+    }
+
+    .sc-testimonial-posted-date {
+        margin-top: 20px;
+
+        p {
+            font-family: satoshiMedium;
+        }
+    }
+}
